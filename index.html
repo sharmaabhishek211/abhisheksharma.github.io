@@ -82,6 +82,11 @@
     .navbar-scroll .navbar-nav > li > a { padding: 20px 10px; }
     .navbar-scroll.navbar-default .nav li a { color: #676a6c; }
     .navbar-scroll.navbar-default .nav li a:hover { color: #3385FF; }
+    .navbar-scroll.navbar-default .navbar-nav > .active > a,
+    .navbar-scroll.navbar-default .navbar-nav > .active > a:hover,
+    .navbar-scroll.navbar-default .navbar-nav > .active > a:focus {
+      color: #3385FF; background: 0; border-top: 6px solid #3385FF;
+    }
 
     .navbar-default .navbar-brand {
       color: #fff; height: auto; display: block;
@@ -100,6 +105,7 @@
       padding: 6px 12px; font-size: 14px; border: none;
     }
     .navbar-toggle .icon-bar { background-color: #fff; }
+    .navbar-cta:hover { background: #1a6fe0 !important; color: #fff !important; }
 
     /* ─── Hero Carousel ─── */
     .header-back { height: 470px; width: 100%; }
@@ -374,6 +380,12 @@
           <li><a class="page-scroll" href="#skills">Skills</a></li>
           <li><a class="page-scroll" href="#projects">Projects</a></li>
           <li><a class="page-scroll" href="#contact">Contact</a></li>
+          <li style="padding: 14px 0 14px 10px;">
+            <a href="#" data-toggle="modal" data-target="#contactModal"
+              style="background:#3385FF; color:#fff !important; padding:8px 18px; border-radius:3px; font-weight:700; font-size:13px; letter-spacing:1px; border-top:none !important; transition: background .2s;">
+              Get In Touch
+            </a>
+          </li>
         </ul>
       </div>
     </div>
@@ -399,7 +411,6 @@
         <p>Technology Lead &nbsp;·&nbsp; .NET Core &nbsp;·&nbsp; Angular &nbsp;·&nbsp; AWS</p>
         <div>
           <a href="#about-me" class="btn btn-primary page-scroll">About Me</a>
-          <a href="Abhishek_Resume.pdf" target="_blank" class="btn-outline-white page-scroll" download>Download Resume</a>
         </div>
       </div>
     </div>
@@ -815,12 +826,19 @@
   <div class="container">
     <div class="row">
       <div class="col-lg-12 text-center wow zoomIn">
-        <div style="height:60px;"></div>
-        <p style="color:rgba(255,255,255,0.9); font-size:15px; margin-bottom:10px; font-weight:300;">
-          B.E. Computer Science &nbsp;·&nbsp; Chitkara University &nbsp;·&nbsp; 2014 – 2018
+        <div style="height:50px;"></div>
+        <i class="fa fa-graduation-cap" style="font-size:48px; color:#fff; margin-bottom:16px; display:block;"></i>
+        <h3 style="color:#fff; font-weight:700; font-size:20px; margin-bottom:8px;">Education</h3>
+        <p style="color:rgba(255,255,255,0.9); font-size:15px; margin-bottom:6px; font-weight:300;">
+          <i class="fa fa-university" style="margin-right:7px; color:rgba(255,255,255,0.75);"></i>Chitkara University &nbsp;·&nbsp; Himachal Pradesh, India
         </p>
-        <a class="btn btn-lg btn-default btn-rounded btn-outline wow bounceIn" href="#" data-toggle="modal" data-target="#contactModal">Get In Touch</a>
-        <div style="height:60px;"></div>
+        <p style="color:rgba(255,255,255,0.9); font-size:15px; margin-bottom:6px; font-weight:300;">
+          <i class="fa fa-book" style="margin-right:7px; color:rgba(255,255,255,0.75);"></i>Bachelor of Engineering &nbsp;·&nbsp; Computer Science
+        </p>
+        <p style="color:rgba(255,255,255,0.75); font-size:13px; margin-bottom:20px;">
+          <i class="fa fa-calendar" style="margin-right:7px;"></i>2014 – 2018
+        </p>
+        <div style="height:50px;"></div>
       </div>
     </div>
   </div>
